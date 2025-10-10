@@ -2,23 +2,24 @@
 Finální projekt do kurzu Python Akademie
 ------------------------------------------
     Popis projektu
-Elections Scraper stáhne výsledky voleb zadaný územní celek a uloží je do CSV. Skript přijímá přes příkazovou řádku přesně dva argumenty: URL územního celku a název výstupního CSV souboru.
+Tento projekt slouží k extrahování výsledků z parlamentních voleb z roku 2017. 
 ------------------------------------------
-    Struktura repozitáře
-  * main.py — hlavní skript (spouští se s 2 argumenty)
-  * requirements.txt — seznam knihoven
-  * README.md — tato dokumentace
+    Instalace knihoven
+Knihovny, které jsou použity v kódu jsou uložené v souboru requirements.txt. Pro instalaci doporučuji použít nové virtuální prostředím. Spuštění:
+  * pip3 --version
+  * pip3 install -r requirements.txt
 ------------------------------------------
     Spuštění skriptu
-Skript se spouští s dvěma argumenty: URL územního celku (musí být plná URL začínající http:// nebo https://) a název výstupního CSV souboru (končí .csv).
-  * python main.py "<URL_UZEMNIHO_CELKU>" "<vystupni_soubor.csv>"
-  * python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103" vysledky_prostejov.csv
-Pokud nejsou zadány oba argumenty nebo mají nesprávný formát, skript oznámí chybu a nepokračuje.
+Skript se spouští s dvěma argumenty: 
+python main.py <odkaz-uzemniho-celku> <vysledny-soubor>
+Následně se vám stáhnou výsledky jako soubor s příponou .csv.
 ------------------------------------------
-    Příklad výstupu:
-code,location,registered,envelopes,valid,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA,ODPOVĚDNÉ
-506741,Albrechtice,205,145,144,2,1,0,0
-589281,Bělá,264,172,171,1,0,0,0
-589282,Bělá-Belkovice-Lašťan,205,145,144,2,1,0,0
-...
-589308,Dědice,1239,748,742,4,3,1,1
+    Ukázka projektu
+Výsledky hlasování pro okres Prostějov:
+1. argument 
+2. argument vysledky_prostejov.csv
+Spuštění programu:
+
+Průběh stahování:
+
+Částečný výstup
